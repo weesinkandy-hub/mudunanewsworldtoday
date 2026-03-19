@@ -1,0 +1,455 @@
+ <div class="container">
+        
+        <article class="news-card">
+            <img src="https://scontent-bom2-4.xx.fbcdn.net/v/t39.30808-6/653712964_122146926038986599_7882187370399995981_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGAlPMw9M4UW8vAb1Y1uHwVgRStph2sQ0aBFK2mHaxDRgRYm0VulYlKnmKnfAP99DNf035TEKejUVXPF2OAGsTg&_nc_ohc=xaPGZeyYdOgQ7kNvwF4TQ5-&_nc_oc=Adp0fsd8PBrg_ZkcIIirUOlhhdxheg8CE9fNfqJdE4HwbDAKG0Q95UkwDfs5Hp_o9k0&_nc_zt=23&_nc_ht=scontent-bom2-4.xx&_nc_gid=dsm6IxvtKC552Gds2OZWDA&_nc_ss=8&oh=00_AfwB0XwWbc3DdV-NTP4i1H_1y7bG3Dv_x5LScDfrIvDyxw&oe=69C1C598" alt="News Image" class="news-image">
+            <div class="news-content">
+                <span class="news-tag">THE BIG STORY</span>
+                <h3 class="news-title">විදේශ අමාත්‍යාංශයේ ප්‍රකාශක ලින් ජියන් දිනපතා මාධ්‍ය හමුවකදී වාර්තාකරුවන්ට මෙසේ පැවසීය:...</h3>
+                <p>ඊශ්‍රායලය විසින් ඉරාන නායකයින් ඝා!ත!න!ය කිරීම පිළිගත නොහැකි බව චීන විදේශ අමාත්‍යාංශය ප්‍රකාශ කරයි.</p>
+                <a href="file:///C:/Users/user/Desktop/ARTICLES/7.html" class="read-more">වැඩිදුර කියවන්න</a>
+            </div>
+        </article>
+
+        <article class="news-card">
+            <img src="https://static.toiimg.com/thumb/imgsize-107964,msid-129668261,width-400,resizemode-4/129668261.jpg" alt="News Image" class="news-image">
+            <div class="news-content">
+                <span class="news-tag">THE BIG STORY</span>
+                <h3 class="news-title">කටාර්හි ගෑස් පිරිපහදු වෙත එල්ල වූ ප්‍රහාරයෙන් යුරෝපයේ ගෑස් මිල 30%කින් ඉහළට</h3>
+                <p>කටාර් රාජ්‍යයේ බලශක්ති මධ්‍යස්ථාන වෙත එල්ල වූ ඉරාන ප්‍රහාරවලින් සිදුවූ හානිය ගණනය කිරීමත් සමඟ, යුරෝපයේ ස්වභාවික වායු මිල එක රැයකින් 30% කින් ඉහළ ගොස් ඇති බව වාර්තා වේ.​.</p>
+                <a href="file:///C:/Users/user/Desktop/ARTICLES/6.html" class="read-more">වැඩිදුර කියවන්න</a>
+            </div>
+        </article>
+
+        <article class="news-card">
+            <img src="https://scontent-bom2-3.xx.fbcdn.net/v/t39.30808-6/652674504_1992584175023378_3706079922621459900_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFgDxFL9Af48tDgSncSlKdWAWPH3HXTcugBY8fcddNy6NzX98a4JL1QtINfeL_KawkPcVJ7yho3bmIwcIIsnfCY&_nc_ohc=7fuIwkDyz0YQ7kNvwF7QWq9&_nc_oc=Adq6oROkJfQ76f7NbmCXatKmgnlD3RC6HAApqxgxzAQlsTmne8Bhdmt-35GJ6-QaBIc&_nc_zt=23&_nc_ht=scontent-bom2-3.xx&_nc_gid=Ko-UcbXct43MHzPNyG71lQ&_nc_ss=8&oh=00_AfzhdudJS-8zxi-tFkvCIC-lBS0QcoIbR2R7rsyiZ2hymA&oe=69C1C00B" alt="News Image" class="news-image">
+            <div class="news-content">
+                <span class="news-tag">කියන කථා</span>
+                <h3 class="news-title">අලි ලලිජානි ගැන ඇමෙරිකාවේ ලොක්කෙක් කියන කථාව</h3>
+                <p>අලි ලරිජානි සාමය සාකච්ඡා කරමින් සිටියේ. ඊශ්‍රායලය ඔහුව ඝාතනය කලා..</p>
+                <a href="file:///C:/Users/user/Desktop/ARTICLES/5.HTML" class="read-more">වැඩිදුර කියවන්න</a>
+            </div>
+        </article>
+
+    </div>
+
+
+<style>
+    /* පුවත් තීරුවල සැකසුම */
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    /* News Card එකේ අලුත් පෙනුම */
+    .news-card {
+        background: #fff;
+        border-bottom: 3px solid #003366; /* Blue border */
+        border-radius: 5px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news-card:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        transform: translateY(-8px);
+        border-bottom-color: #cc0000; /* Hover කරද්දී රතු පාට වෙනවා */
+    }
+
+    .news-image-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .news-image-wrapper img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .news-card:hover .news-image-wrapper img {
+        transform: scale(1.1); /* Image එක zoom වෙනවා */
+    }
+
+    .news-content {
+        padding: 15px;
+        flex-grow: 1;
+    }
+
+    .news-date {
+        font-size: 12px;
+        color: #777;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .news-title {
+        font-size: 17px;
+        color: #003366;
+        font-weight: bold;
+        text-decoration: none;
+        line-height: 1.4;
+    }
+
+    .news-title:hover {
+        color: #cc0000;
+    }
+
+    /* Read More එක ලස්සනට */
+    .read-more-btn {
+        margin-top: 15px;
+        display: inline-block;
+        color: #cc0000;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+    .read-more-btn:hover {
+        text-decoration: underline;
+        color: #003366;
+    }
+</style>
+
+<div class="news-grid">
+    <div class="news-card">
+        <div class="news-image-wrapper">
+            <img src="https://joshuafund.com/wp-content/uploads/2026/02/ChatGPT-Image-Feb-28-2026-03_47_01-PM-1024x683.png" alt="News">
+        </div>
+        <div class="news-content">
+            <span class="news-date">2026 මාර්තු 19</span>
+            <a href="news-1.html" class="news-title">යුද්දෙට යට කල සල්ලි</a>
+            <p>එක්සත් ජනපදය විසින් ඉරානයට එරෙහිව කරන හමුදා මෙහෙයුම් සඳහා දැනටමත් අවම වශයෙන් ඩොලර් බිලියන 06 පමණ වියදම් කර ඇති</p>
+            <a href="file:///C:/Users/user/Desktop/ARTICLES/4.HTML" class="read-more-btn">වැඩිදුර කියවන්න ➔</a>
+        </div>
+    </div>
+
+    <div class="news-card">
+        <div class="news-image-wrapper">
+            <img src="https://scontent-bom5-1.xx.fbcdn.net/v/t39.30808-6/653913360_122146913156986599_4928567911301588544_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFuvYEH18jysmojx1eBGD9bEhQBTgxKlmsSFAFODEqWa01N3w1cF-QcRvWSz1ih-4lVDNmRt1K9W6P9bl4Nokos&_nc_ohc=CvLzArsnI8IQ7kNvwEAqFko&_nc_oc=AdoZUEHsVeEAn-81DezJP1JUGz_UYl41h2n7BMS-J7NU9HicqQreN0tcI4HIk98McTc&_nc_zt=23&_nc_ht=scontent-bom5-1.xx&_nc_gid=XXYfSFFF52qwKyhYPwoP0g&_nc_ss=8&oh=00_AfxY9SAwI4bDKgV4GKgq5GzwwyucQFRhrthjAT4fOeThug&oe=69C1B819" alt="News">
+        </div>
+        <div class="news-content">
+            <span class="news-date">2026 මාර්තු 19</span>
+            <a href="news-2.html" class="news-title">පාකිස්ථානය තර්ජනයක් - එක්සත් ජනපද පෙන්ටගන් වාර්තාවකින් එළි වෙයි.</a>
+            <p>පකිස්ථානය න්‍යෂ්ටික තර්ජනයක් ලෙස එක්සත් ජනපදය සලකුණු කර ඇති අතර පාකිස්ථානය එක්සත් ජනපදයේ ඉහළම පෙළේ ගැටළු අතරට ඇතුළත් කර ඇත.</p>
+            <a href="file:///C:/Users/user/Desktop/web/5.HTML" class="read-more-btn">වැඩිදුර කියවන්න ➔</a>
+        </div>
+    </div>
+
+    <div class="news-card">
+        <div class="news-image-wrapper">
+            <img src="https://scontent-bom2-1.xx.fbcdn.net/v/t51.82787-15/654198734_17931588495210072_1483713738799895198_n.webp?stp=dst-jpg_s720x720_tt6&_nc_cat=1&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeH6oJcqeHRklQRZkEGLSRP3JlHiXjVqhuwmUeJeNWqG7FAqtNLFVwuVwXUG1XnStDQiubUmuqcQupApV_PWAWuZ&_nc_ohc=SeMNvJUfpQkQ7kNvwEGdzA1&_nc_oc=Adqe_UpczTv2rmh-EWjgzyC8d0pQK6tYpyOjK1aoQHtW1XcO1xU5Tezolp7czfQXxTk&_nc_zt=23&_nc_ht=scontent-bom2-1.xx&_nc_gid=jAj-0HTMzAtNrw4ig5ZxSA&_nc_ss=8&oh=00_Afy_5chffGeoiUHsWsnP1Ky7RuH9wxX7UEyP4uW4IMO5pw&oe=69C1BDFE" alt="News">
+        </div>
+        <div class="news-content">
+            <span class="news-date">2026 මාර්තු 19</span>
+            <a href="news-3.html" class="news-title"> </a>
+            <p>4 වෙනි මාසය දක්වා නැව් ස්ථීර කරලා තියෙන්නේ. </p>
+            <a href="file:///C:/Users/user/Desktop/ARTICLES/2.HTML" class="read-more-btn">වැඩිදුර කියවන්න ➔</a>
+        </div>
+    </div>
+
+    <div class="news-card">
+        <div class="news-image-wrapper">
+            <img src="https://eu-images.contentstack.com/v3/assets/bltdcfe6aab5515629e/blt006cd4b89433b61c/69b127f0de5844322e3a7b6f/bulker-fire-credit-UKMTO.jpg" alt="News">
+        </div>
+        <div class="news-content">
+            <span class="news-date">2026 මාර්තු  19</span>
+            <a href="news-4.html" class="news-title">බලපෑම් රැසක් මැද හොර්මුස් සමුද්‍ර සන්ධිය උණුසුම් වෙයි
+</a>
+            <p>ඉරානය විසින් හොර්මුස් සමුද්‍ර සන්ධිය හරහා ගමන් කරන නෞකාවලට නව ගාස්තුවක් හඳුන්වා දීමට සූදානම් වේ.</p>
+            <a href="file:///C:/Users/user/Desktop/web/7.HTML" class="read-more-btn">වැඩිදුර කියවන්න ➔</a>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    /* පුවත් තීරුවල සැකසුම */
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    /* News Card එකේ අලුත් පෙනුම */
+    .news-card {
+        background: #fff;
+        border-bottom: 3px solid #003366; /* Blue border */
+        border-radius: 5px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news-card:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        transform: translateY(-8px);
+        border-bottom-color: #cc0000; /* Hover කරද්දී රතු පාට වෙනවා */
+    }
+
+    .news-image-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .news-image-wrapper img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .news-card:hover .news-image-wrapper img {
+        transform: scale(1.1); /* Image එක zoom වෙනවා */
+    }
+
+    .news-content {
+        padding: 15px;
+        flex-grow: 1;
+    }
+
+    .news-date {
+        font-size: 12px;
+        color: #777;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .news-title {
+        font-size: 17px;
+        color: #003366;
+        font-weight: bold;
+        text-decoration: none;
+        line-height: 1.4;
+    }
+
+    .news-title:hover {
+        color: #cc0000;
+    }
+
+    /* Read More එක ලස්සනට */
+    .read-more-btn {
+        margin-top: 15px;
+        display: inline-block;
+        color: #cc0000;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+    .read-more-btn:hover {
+        text-decoration: underline;
+        color: #003366;
+    }
+</style>
+
+
+<style>
+    /* පුවත් තීරුවල සැකසුම */
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    /* News Card එකේ අලුත් පෙනුම */
+    .news-card {
+        background: #fff;
+        border-bottom: 3px solid #003366; /* Blue border */
+        border-radius: 5px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news-card:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        transform: translateY(-8px);
+        border-bottom-color: #cc0000; /* Hover කරද්දී රතු පාට වෙනවා */
+    }
+
+    .news-image-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .news-image-wrapper img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .news-card:hover .news-image-wrapper img {
+        transform: scale(1.1); /* Image එක zoom වෙනවා */
+    }
+
+    .news-content {
+        padding: 15px;
+        flex-grow: 1;
+    }
+
+    .news-date {
+        font-size: 12px;
+        color: #777;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .news-title {
+        font-size: 17px;
+        color: #003366;
+        font-weight: bold;
+        text-decoration: none;
+        line-height: 1.4;
+    }
+
+    .news-title:hover {
+        color: #cc0000;
+    }
+
+    /* Read More එක ලස්සනට */
+    .read-more-btn {
+        margin-top: 15px;
+        display: inline-block;
+        color: #cc0000;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+    .read-more-btn:hover {
+        text-decoration: underline;
+        color: #003366;
+    }
+</style>
+
+
+<style>
+    /* Section Layout */
+    .health-section {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .section-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+    }
+
+    .title-red-bar {
+        width: 10px;
+        height: 35px;
+        background: #007bff; /* Health Blue */
+        margin-right: 15px;
+    }
+
+    .section-title h2 {
+        margin: 0;
+        font-size: 24px;
+        color: #1a1a1a;
+    }
+
+    .en-sub {
+        color: #888;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    /* Health Cards Grid */
+    .health-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 25px;
+    }
+
+    .health-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid #eee;
+    }
+
+    .health-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .health-img-box {
+        position: relative;
+        height: 200px;
+    }
+
+    .health-img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .health-tag {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background: #28a745; /* Success Green */
+        color: white;
+        padding: 5px 12px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+
+    .health-info {
+        padding: 20px;
+    }
+
+    .health-info h3 {
+        font-size: 19px;
+        margin: 0 0 10px 0;
+        line-height: 1.4;
+        color: #111;
+        transition: 0.3s;
+    }
+
+    .health-card:hover h3 {
+        color: #007bff;
+    }
+
+    .health-info p {
+        font-size: 15px;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .read-more-link {
+        color: #007bff;
+        font-weight: bold;
+        font-size: 14px;
+    }
+</style>
